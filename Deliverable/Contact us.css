@@ -1,0 +1,39 @@
+div{
+margin-left: 27vw;
+padding-left: 10%;
+padding-bottom: 5%;
+margin-top: 5vh;
+font-style:inherit;
+}
+body{
+    /* background-image: url('images/WhatsApp\ Image\ 2023-08-22\ at\ 14.44.24.jpg'); */
+    background-color: #545252;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+  color: aliceblue;
+}
+
+@Media screen and (max-device-width:1000px){
+    div{
+      height: 100vh;
+      margin-left:10% ;
+      padding-top: 15%;
+    }
+    body{
+       background-size: 100% 100%; 
+    }
+}
+
+@Media screen and (max-device-width:400px){
+  div{
+    height: 100vh;
+    margin-left:auto;
+    padding-top: 0%;
+    width: 100vw;
+  }
+  body{
+     background-size: 100% 100%; 
+  }
+}

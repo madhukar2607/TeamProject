@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="login.css" />
+    <script src="login.js"></script>
+  </head>
+  
+  <body>
+    <div class="total">
+      <form action="" onsubmit="return loginValidation(this)">
+        <h2>Login</h2>
+        <div class="input-field">
+          <input type="text" name="username" id="user" placeholder="Enter your username" />
+        </div>
+        <div class="input-field">
+          <input type="password" name="password" id="pass" placeholder="Enter your password" />
+        </div>
+        <div class="forget" style="color: aliceblue">
+          <label for="remember">
+            <input type="checkbox" name="checkbox" id="check"/>
+            <p>Remember me</p>
+          </label>
+          <a href="#" style="color: aliceblue;">Forgot password?</a>
+        </div>
+        <button type="submit">Log In</button><br /><br />
+        <div>
+          <a href="user login.html" style="margin-top: 60px; color: white"
+            >Login as admin</a
+          >
+        </div>
+
+        <div class="register">
+          <p>
+            Don't have an account? <a href="register.html" style="color: aliceblue;">Register</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

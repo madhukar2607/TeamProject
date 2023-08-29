@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="Contact us.css">
+
+    
+</head>
+<script>
+    function validateform() {
+ const Name = document.getElementById('Name').value;
+ const Email = document.getElementById('Email').value;
+ const Mobile = document.getElementById('Mobile').value;
+ const city = document.getElementById('city').value;
+ const Message = document.getElementById('message').value;
+ const State = document.getElementById('state').value;
+ 
+ if (Name.length < 4 || Name.length > 30) {
+   alert("name must be between 4 and 30 characters");
+   return false;
+ }
+ if (!validateEmail(Email)) {
+        alert("Invalid email format");
+        return false;
+      }
+  if(city.length===0){
+    alert('enter the address');
+    return false;
+  }
+  if(city.Message===0){
+    alert('enter the complaint');
+    return false;
+  }
+  if(city.State===0){
+    alert('enter the state');
+    return false;
+  }
+
+ if (Mobile.length < 10 || Mobile.lengtn >12 ) {
+   alert("Please Enter Valid Number");
+   return false;
+ }
+  return true;
+
+}
+function validateEmail(email) {
+      // A simple email validation regular expression
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailPattern.test(email);
+    }
+
+
+</script>
+<body>
+ <div>
+   <form action="contactscucess.html"  onsubmit="return validateform()">
+    <h1 style="color:rgb(231, 229, 229);">Contact us</h1>
+    <label>Name:</label>
+    <input type="text" id="Name"><br><br>
+
+    <label>Email:</label>
+    <input type="Email" id="Email"><br><br>
+    
+    <label>Mobile:</label>
+    <input type="text" id="Mobile"><br><br>
+
+    <label>Purpose:</label>
+    <select>
+        <option>Select Subject</option>
+        <option>Order Information</option>
+        <option>Feedback On Products</option>
+        <option>Enquiry</option>
+        <option>Others</option>
+    </select><br><br>
+    
+    <label>City:</label>
+    <input type="text" id="city"><br><br>
+
+    <label>State:</label>
+    <input type="text" id="state"><br><br>
+
+    <label>Message:</label><br>
+    <textarea name="message" cols="30" rows="04" id="message"></textarea><br><br>
+
+    <input  type="submit" value="submit">
+   </form>
+ </div>
+    
+</body>
+</html>
